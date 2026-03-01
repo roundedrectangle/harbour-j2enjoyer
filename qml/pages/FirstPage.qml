@@ -127,10 +127,23 @@ Page {
                 model: images
 
                 delegate: Image {
+                    id: image
                     width: PagedView.contentWidth
                     height: PagedView.contentHeight
                     source: modelData
                     fillMode: Image.PreserveAspectCrop
+
+                    // HighlightImage is kinda broken, so we use this
+                    layer {
+                        enabled: imageMouseArea.containsPress
+                        effect: PressEffect { source: image }
+                    }
+
+                    MouseArea {
+                        id: imageMouseArea
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally(modelData)
+                    }
                 }
             }
 

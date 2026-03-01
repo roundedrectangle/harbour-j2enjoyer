@@ -9,6 +9,7 @@ DISTFILES += qml/harbour-j2enjoyer.qml \
     qml/pages/AboutPage.qml \
     qml/pages/FirstPage.qml \
     qml/pages/SettingsPage.qml \
+    qml/pages/PressEffect.qml \
     rpm/harbour-j2enjoyer.changes.in \
     rpm/harbour-j2enjoyer.changes.run.in \
     rpm/harbour-j2enjoyer.spec \
