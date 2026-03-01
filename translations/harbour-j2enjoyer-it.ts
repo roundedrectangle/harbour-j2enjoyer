@@ -60,16 +60,21 @@
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="33"/>
+        <source>Enjoy in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="38"/>
         <source>Refresh</source>
         <translation>Ricarica</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="49"/>
+        <location filename="../qml/pages/FirstPage.qml" line="54"/>
         <source>J2: Enjoyer!</source>
         <translation>J2: Enjoyer!</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="66"/>
+        <location filename="../qml/pages/FirstPage.qml" line="71"/>
         <source>sold out of %n</source>
         <comment>after a number of units, e.g. 1500 [in big] &lt;new line&gt; sold out of 2000</comment>
         <translation>
@@ -78,7 +83,7 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="74"/>
+        <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>%Ln% funded</source>
         <translation>
             <numerusform>%Ln% finanziato</numerusform>
@@ -86,7 +91,25 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="84"/>
+        <location filename="../qml/pages/FirstPage.qml" line="91"/>
+        <source>The product will not be produced as %n units were not supported by %1</source>
+        <comment>%1 is date</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/pages/FirstPage.qml" line="92"/>
+        <source>The product will be produced as %n units were supported by %1</source>
+        <comment>%1 is date</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/pages/FirstPage.qml" line="93"/>
         <source>The product will only be produced if %n units are supported by %1</source>
         <comment>%1 is date</comment>
         <translation>
@@ -94,14 +117,17 @@
             <numerusform>L&apos;oggetto sarà prodotto solo se %n unità verranno vendute al %1</numerusform>
         </translation>
     </message>
-    <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="108"/>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="119"/>
+        <source>ended</source>
+        <comment>after the duration before the deadline, e.g. 3 MONTHS AGO &lt;new line&gt; ended</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="120"/>
         <source>will end</source>
         <comment>after the duration before the deadline, e.g. IN 3 MONTHS &lt;new line&gt; will end</comment>
-        <translation>
-            <numerusform>finisce</numerusform>
-            <numerusform>finiscono</numerusform>
-        </translation>
+        <translation type="unfinished">finisce</translation>
     </message>
 </context>
 <context>
@@ -171,12 +197,12 @@
 <context>
     <name>harbour-j2enjoyer</name>
     <message>
-        <location filename="../qml/harbour-j2enjoyer.qml" line="28"/>
+        <location filename="../qml/harbour-j2enjoyer.qml" line="30"/>
         <source>Enjoying failure!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/harbour-j2enjoyer.qml" line="67"/>
+        <location filename="../qml/harbour-j2enjoyer.qml" line="73"/>
         <source>Error %1</source>
         <translation type="unfinished"></translation>
     </message>

@@ -1,7 +1,7 @@
 Name:       harbour-j2enjoyer
 
 Summary:    An application for J2 Enjoyers!
-Version:    1.0.1
+Version:    1.1.0
 Release:    1
 License:    LICENSE
 BuildArch:  noarch

@@ -60,17 +60,17 @@
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="33"/>
+        <location filename="../qml/pages/FirstPage.qml" line="38"/>
         <source>Refresh</source>
         <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="49"/>
+        <location filename="../qml/pages/FirstPage.qml" line="54"/>
         <source>J2: Enjoyer!</source>
         <translation>J2: Наслаждающийся!</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="66"/>
+        <location filename="../qml/pages/FirstPage.qml" line="71"/>
         <source>sold out of %n</source>
         <comment>after a number of units, e.g. 1500 [in big] &lt;new line&gt; sold out of 2000</comment>
         <translation>
@@ -80,26 +80,53 @@
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="108"/>
+        <location filename="../qml/pages/FirstPage.qml" line="91"/>
+        <source>The product will not be produced as %n units were not supported by %1</source>
+        <comment>%1 is date</comment>
+        <translation>
+            <numerusform>Продукт не будет произведён, так как %n устройство не были спонсированы к %1.</numerusform>
+            <numerusform>Продукт не будет произведён, так как %n устройства не были спонсированы к %1.</numerusform>
+            <numerusform>Продукт не будет произведён, так как %n устройств не были спонсированы к %1.</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/pages/FirstPage.qml" line="92"/>
+        <source>The product will be produced as %n units were supported by %1</source>
+        <comment>%1 is date</comment>
+        <translation>
+            <numerusform>Продукт будет произведён, так как %n устройство были спонсированы к %1.</numerusform>
+            <numerusform>Продукт будет произведён, так как %n устройства были спонсированы к %1.</numerusform>
+            <numerusform>Продукт будет произведён, так как %n устройств были спонсированы к %1.</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="119"/>
+        <source>ended</source>
+        <comment>after the duration before the deadline, e.g. 3 MONTHS AGO &lt;new line&gt; ended</comment>
+        <translation>закончился</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="120"/>
         <source>will end</source>
         <comment>after the duration before the deadline, e.g. IN 3 MONTHS &lt;new line&gt; will end</comment>
-        <translation>
-            <numerusform>закончится</numerusform>
-            <numerusform>закончится</numerusform>
-            <numerusform>закончится</numerusform>
-        </translation>
+        <translation>закончится</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="74"/>
+        <location filename="../qml/pages/FirstPage.qml" line="79"/>
         <source>%Ln% funded</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%Ln спонсирован</numerusform>
+            <numerusform>%Ln спонсировано</numerusform>
+            <numerusform>%Ln спонсировано</numerusform>
         </translation>
     </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="33"/>
+        <source>Enjoy in Browser</source>
+        <translation>Наслаждаться в Браузере</translation>
+    </message>
     <message numerus="yes">
-        <location filename="../qml/pages/FirstPage.qml" line="84"/>
+        <location filename="../qml/pages/FirstPage.qml" line="93"/>
         <source>The product will only be produced if %n units are supported by %1</source>
         <comment>%1 is date</comment>
         <translation>
@@ -135,7 +162,7 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="65"/>
         <source>Jolla Phone (Sep 2026)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jolla Phone (Сентябрь 2026)</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="75"/>
@@ -170,20 +197,20 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="146"/>
         <source>Show info messages in notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать информационные сообщения в списке уведомлений</translation>
     </message>
 </context>
 <context>
     <name>harbour-j2enjoyer</name>
     <message>
-        <location filename="../qml/harbour-j2enjoyer.qml" line="28"/>
+        <location filename="../qml/harbour-j2enjoyer.qml" line="30"/>
         <source>Enjoying failure!</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось насладиться!</translation>
     </message>
     <message>
-        <location filename="../qml/harbour-j2enjoyer.qml" line="67"/>
+        <location filename="../qml/harbour-j2enjoyer.qml" line="73"/>
         <source>Error %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка %1</translation>
     </message>
 </context>
 </TS>

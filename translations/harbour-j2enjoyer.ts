@@ -76,12 +76,33 @@
             <numerusform></numerusform>
         </translation>
     </message>
-    <message numerus="yes">
+    <message>
         <source>will end</source>
         <comment>after the duration before the deadline, e.g. IN 3 MONTHS &lt;new line&gt; will end</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enjoy in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <source>The product will not be produced as %n units were not supported by %1</source>
+        <comment>%1 is date</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
+    </message>
+    <message numerus="yes">
+        <source>The product will be produced as %n units were supported by %1</source>
+        <comment>%1 is date</comment>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <source>ended</source>
+        <comment>after the duration before the deadline, e.g. 3 MONTHS AGO &lt;new line&gt; ended</comment>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
