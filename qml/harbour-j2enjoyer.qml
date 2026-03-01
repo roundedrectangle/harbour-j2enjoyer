@@ -97,7 +97,7 @@ ApplicationWindow {
         path: '/apps/harbour-j2enjoyer'
 
         property string host: 'https://commerce.jolla.com'
-        property string pagePath: '/products/jolla-phone-preorder'
+        property string pagePath: '/products/jolla-phone-sept-26'
         property bool autoUpdate: true
         property real updateInterval: 30 // while real value can't be customized in the app, it can be by editing dconf value manually
         property bool backgroundAutoUpdate: true
