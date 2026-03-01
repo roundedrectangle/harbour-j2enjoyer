@@ -7,9 +7,9 @@ Page {
 
     Timer {
         // Keep this here to only update when this page is active
-        running: (Qt.application.state === Qt.ApplicationActive) ? config.backgroundAutoUpdate : (config.autoUpdate && page.status == PageStatus.Active)
+        running: Qt.application.state === Qt.ApplicationActive ? (config.autoUpdate && page.status == PageStatus.Active) : config.backgroundAutoUpdate
         repeat: true
-        interval: ((Qt.application.state === Qt.ApplicationActive) ? config.updateInterval : config.backgroundUpdateInterval) * 1000
+        interval: (Qt.application.state === Qt.ApplicationActive ? config.backgroundUpdateInterval : config.updateInterval) * 1000
         onTriggered: update()
     }
 

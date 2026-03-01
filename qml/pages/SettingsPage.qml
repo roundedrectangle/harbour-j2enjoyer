@@ -5,6 +5,16 @@ Page {
     id: page
     allowedOrientations: Orientation.All
 
+    onStatusChanged:
+        if (status == PageStatus.Deactivating || status == PageStatus.Inactive) {
+            config.pagePath = pathField.text
+            config.host = hostField.text
+            if (updateIntervalField.validator.regExp.test(updateIntervalField.text))
+                config.updateInterval = Number(updateIntervalField.text)
+            if (backgroundUpdateIntervalField.validator.regExp.test(backgroundUpdateIntervalField.text))
+                config.backgroundUpdateInterval = Number(backgroundUpdateIntervalField.text)
+        }
+
     SilicaFlickable {
         anchors.fill: parent
         contentHeight: column.height
@@ -24,7 +34,7 @@ Page {
                 onFocusChanged: if (!focus) config.host = text
 
                 rightItem: IconButton {
-                    onClicked: hostField.text = "https://commerce.jolla.com"
+                    onClicked: hostField.text = config.host = "https://commerce.jolla.com"
 
                     width: icon.width
                     height: icon.height
@@ -40,14 +50,24 @@ Page {
                 text: config.pagePath
                 onFocusChanged: if (!focus) config.pagePath = text
 
-                rightItem: IconButton {
-                    onClicked: pathField.text = '/products/jolla-phone-preorder'
-
-                    width: icon.width
-                    height: icon.height
-                    icon.source: "image://theme/icon-splus-remove"
-                    opacity: pathField.text == '/products/jolla-phone-preorder' ? 0 : 1
-                    Behavior on opacity { FadeAnimator {} }
+                labelComponent: Component {
+                    MiniComboBox {
+                        label: qsTr("Page path")
+                        onCurrentItemChanged:
+                            if (currentItem !== null) currentItem = null
+                        menu: ContextMenu {
+                            MenuItem {
+                                text: qsTr("Jolla Phone")
+                                onClicked:
+                                    pathField.text = config.pagePath = "/products/jolla-phone-preorder"
+                            }
+                            MenuItem {
+                                text: qsTr("Jolla Phone (Sep 2026)")
+                                onClicked:
+                                    pathField.text = config.pagePath = "/products/jolla-phone-sept-26"
+                            }
+                        }
+                    }
                 }
             }
 
@@ -73,7 +93,10 @@ Page {
                 onFocusChanged: if (!focus && validator.regExp.test(text)) config.updateInterval = Number(text)
 
                 rightItem: IconButton {
-                    onClicked: updateIntervalField.text = "30"
+                    onClicked: {
+                        config.updateInterval = 30
+                        updateIntervalField.text = "30"
+                    }
 
                     width: icon.width
                     height: icon.height
@@ -91,9 +114,9 @@ Page {
 
             TextField {
                 id: backgroundUpdateIntervalField
-                height: config.autoUpdate ? implicitHeight : 0
+                height: config.backgroundAutoUpdate ? implicitHeight : 0
                 Behavior on height { NumberAnimation { duration: 200 } }
-                opacity: config.autoUpdate ? 1 : 0
+                opacity: config.backgroundAutoUpdate ? 1 : 0
                 Behavior on opacity { FadeAnimator {} }
 
                 label: validator.regExp.test(text)
@@ -101,11 +124,14 @@ Page {
                        : qsTr("Background auto-update interval, in seconds")
                 inputMethodHints: Qt.ImhDigitsOnly // ImhDigitsOnly and ImhFormattedNumbersOnly seem to have no difference
                 validator: RegExpValidator { regExp: /^[1-9]\d*$/ }
-                text: config.updateInterval
-                onFocusChanged: if (!focus && validator.regExp.test(text)) config.updateInterval = Number(text)
+                text: config.backgroundUpdateInterval
+                onFocusChanged: if (!focus && validator.regExp.test(text)) config.backgroundUpdateInterval = Number(text)
 
                 rightItem: IconButton {
-                    onClicked: backgroundUpdateIntervalField.text = "1800"
+                    onClicked: {
+                        config.backgroundUpdateInterval = 1800
+                        backgroundUpdateIntervalField.text = "1800"
+                    }
 
                     width: icon.width
                     height: icon.height
