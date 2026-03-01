@@ -35,6 +35,7 @@ function send(t, v) {
 WorkerScript.onMessage = function(message) {
     host = message.host.replace(new RegExp(/\/$/g), '') // trim trailing slashes
     pagePath = '/' + message.pagePath.replace(new RegExp(/^\//g), '')
+    send('url', host + pagePath)
 
     var request = new XMLHttpRequest();
 

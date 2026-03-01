@@ -30,6 +30,11 @@ Page {
                 onClicked: pageStack.push("SettingsPage.qml")
             }
             MenuItem {
+                text: qsTr("Enjoy in Browser")
+                onClicked: Qt.openUrlExternally(externalUrl)
+            }
+
+            MenuItem {
                 text: qsTr("Refresh")
                 onClicked: {
                     appWindow.refreshing = true

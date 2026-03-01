@@ -18,6 +18,7 @@ ApplicationWindow {
     property int endTime
     property var images: []
     property string productTitle
+    property url externalUrl
 
     Notification {
         id: notifier
@@ -35,6 +36,9 @@ ApplicationWindow {
         onMessage: {
             var v = messageObject.v
             switch (messageObject.t) {
+            case 'url':
+                externalUrl = v
+                break
             case 'number':
                 number = v
                 break
