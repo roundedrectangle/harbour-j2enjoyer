@@ -49,17 +49,17 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="27"/>
+        <location filename="../qml/pages/FirstPage.qml" line="25"/>
         <source>About</source>
         <translation>Info</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="31"/>
+        <location filename="../qml/pages/FirstPage.qml" line="29"/>
         <source>Settings</source>
         <translation>Impostazioni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="35"/>
+        <location filename="../qml/pages/FirstPage.qml" line="33"/>
         <source>Refresh</source>
         <translation>Ricarica</translation>
     </message>
@@ -107,49 +107,78 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="17"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="27"/>
         <source>Settings</source>
         <translation>Impostazioni</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="22"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="39"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="49"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="55"/>
         <source>Page path</source>
         <translation>Percorso pagina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="55"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="60"/>
+        <source>Jolla Phone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingsPage.qml" line="65"/>
+        <source>Jolla Phone (Sep 2026)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingsPage.qml" line="75"/>
         <source>Auto-update</source>
         <translation>Auto ricarica</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="68"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="88"/>
         <source>Auto-update interval, in seconds: %1</source>
         <translation>Intervallo auto ricarica di secondi: %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="69"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="89"/>
         <source>Auto-update interval, in seconds</source>
         <translation>Intervallo auto ricarica, in secondi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="87"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="110"/>
         <source>Auto-update in background</source>
         <translation>Auto ricarica in background</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="100"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="123"/>
         <source>Background auto-update interval, in seconds: %1</source>
         <translation>Intervallo auto ricarica in background di secondi: %1</translation>
     </message>
     <message>
-        <location filename="../qml/pages/SettingsPage.qml" line="101"/>
+        <location filename="../qml/pages/SettingsPage.qml" line="124"/>
         <source>Background auto-update interval, in seconds</source>
         <translation>Intervallo auto ricarica in background di secondi</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/SettingsPage.qml" line="146"/>
+        <source>Show info messages in notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>harbour-j2enjoyer</name>
+    <message>
+        <location filename="../qml/harbour-j2enjoyer.qml" line="28"/>
+        <source>Enjoying failure!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/harbour-j2enjoyer.qml" line="67"/>
+        <source>Error %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

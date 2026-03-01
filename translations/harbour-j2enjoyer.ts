@@ -122,5 +122,28 @@
         <source>Background auto-update interval, in seconds</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Jolla Phone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Jolla Phone (Sep 2026)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show info messages in notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>harbour-j2enjoyer</name>
+    <message>
+        <source>Enjoying failure!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error %1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
