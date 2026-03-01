@@ -86,7 +86,12 @@ Page {
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeSmall
                 wrapMode: Text.Wrap
-                text: qsTr("The product will only be produced if %n units are supported by %1", "%1 is date", total).arg(Format.formatDate(new Date(endTime*1000), Formatter.DateFull))
+                text: (endTime < approximateCurrentTime
+                       ? (total > number
+                          ? qsTr("The product will not be produced as %n units were not supported by %1", "%1 is date", total)
+                          : qsTr("The product will be produced as %n units were supported by %1", "%1 is date", total))
+                       : qsTr("The product will only be produced if %n units are supported by %1", "%1 is date", total)
+                       ).arg(Format.formatDate(new Date(endTime*1000), Formatter.DateFull))
             }
 
             Label {
@@ -110,7 +115,9 @@ Page {
                 width: parent.width - 2*x
                 color: Theme.secondaryHighlightColor
                 font.pixelSize: Theme.fontSizeMedium
-                text: qsTr("will end", 'after the duration before the deadline, e.g. IN 3 MONTHS <new line> will end', total)
+                text: endTime < approximateCurrentTime
+                      ? qsTr("ended", "after the duration before the deadline, e.g. 3 MONTHS AGO <new line> ended")
+                      : qsTr("will end", "after the duration before the deadline, e.g. IN 3 MONTHS <new line> will end")
             }
 
             PagedView {

@@ -16,6 +16,7 @@ ApplicationWindow {
     property int total
     property int percentage
     property int endTime
+    property int approximateCurrentTime
     property var images: []
     property string productTitle
     property url externalUrl
@@ -50,6 +51,7 @@ ApplicationWindow {
                 break
             case 'endTime':
                 endTime = v
+                approximateCurrentTime = new Date().getTime() / 1000
                 break
             case 'productTitle':
                 productTitle = v
