@@ -6,7 +6,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="56"/>
         <source>A helper application for all the J2 Enjoyers.</source>
-        <translation>Un&apos;applicazione d&apos;aiuto a tutti quelli che amano il J2.</translation>
+        <translation>Un&apos;applicazione per tutti quelli che amano il J2.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="64"/>
@@ -61,7 +61,7 @@
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="33"/>
         <source>Enjoy in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Enjoy nel Browser</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="38"/>
@@ -94,8 +94,8 @@
         <location filename="../qml/pages/FirstPage.qml" line="91"/>
         <source>The product will not be produced as %n units were not supported by %1</source>
         <comment>%1 is date</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>L&apos;oggetto non sarà prodotto in quanto %n unità non sono state preordinate da %1</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -103,8 +103,8 @@
         <location filename="../qml/pages/FirstPage.qml" line="92"/>
         <source>The product will be produced as %n units were supported by %1</source>
         <comment>%1 is date</comment>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>L&apos;oggetto sarà prodotto in quanto %n unità sono state preordinate da %1</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -121,13 +121,13 @@
         <location filename="../qml/pages/FirstPage.qml" line="119"/>
         <source>ended</source>
         <comment>after the duration before the deadline, e.g. 3 MONTHS AGO &lt;new line&gt; ended</comment>
-        <translation type="unfinished"></translation>
+        <translation>finito</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="120"/>
         <source>will end</source>
         <comment>after the duration before the deadline, e.g. IN 3 MONTHS &lt;new line&gt; will end</comment>
-        <translation type="unfinished">finisce</translation>
+        <translation>finisce</translation>
     </message>
 </context>
 <context>
@@ -140,22 +140,22 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="32"/>
         <source>Enjoyables server</source>
-        <translation type="unfinished"></translation>
+        <translation>Server Enjoyer</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="54"/>
         <source>Path to the Enjoyable</source>
-        <translation type="unfinished"></translation>
+        <translation>Percordo dell&apos;Enjoyer</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="59"/>
         <source>Jolla Phone Pre-order</source>
-        <translation type="unfinished"></translation>
+        <translation>Jolla Phone Preordine</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="64"/>
         <source>Jolla Phone (Sep 2026)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jolla Phone (Set 2026)</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="74"/>
@@ -190,7 +190,7 @@
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="145"/>
         <source>Enjoy failures in Events</source>
-        <translation type="unfinished"></translation>
+        <translation>Fallimenti Enjoy negli Eventi</translation>
     </message>
 </context>
 <context>
@@ -198,12 +198,12 @@
     <message>
         <location filename="../qml/harbour-j2enjoyer.qml" line="30"/>
         <source>Enjoying failure!</source>
-        <translation type="unfinished"></translation>
+        <translation>Fallimento Enjoyer!</translation>
     </message>
     <message>
         <location filename="../qml/harbour-j2enjoyer.qml" line="73"/>
         <source>Error %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore %1</translation>
     </message>
 </context>
 </TS>
